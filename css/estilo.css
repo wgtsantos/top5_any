@@ -13,7 +13,7 @@ body {
 }
 
 #geral, header, nav, aside, footer {
-	border: 1px solid #000;
+	border: 1px solid transparent;
 	border-radius: 8px;
 	box-shadow: 4px 3px 5px rgba(9, 9, 9, 0.6);
 }
@@ -23,6 +23,7 @@ body {
 	/* height: 800px; Altura Automática */
 	background-color: #CAFDFF;
 	margin: 0 auto;
+	margin-top: 10px;
 }
 
 header {
@@ -33,13 +34,48 @@ header {
 	background-color: #99DDFF;
 }
 
+header h1 {
+	text-align: center;
+	line-height: 200px;
+}
+
 nav {
 	width: 994px;
-	height: 60px;
+	height: 57px;
 	margin-left: 15px;
 	margin-top: 10px;
 	background-color: #7EF;	
 }
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav li {
+	float: left;
+}
+
+nav li a {
+	display: block;
+	color: #777;
+	font-weight: bolder;
+	text-align: center;
+	padding: 20px 16px;
+}
+
+nav li a:hover:not(.atv){
+	color: #FFF;
+	background-color: #888;
+}
+
+nav li a.atv {
+	color: #FFF;
+	background-color: #888;
+}
+
 
 aside {
 	width: 994px;
