@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
 	<title> TOP 5 ANY </title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 </head>
 <body>
 
