@@ -2,8 +2,8 @@
 <html>
 <head>
 	<title> TOP 5 ANY</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen" />
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen">
 </head>
 <body>
 
