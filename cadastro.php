@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
 	<title> TOP 5 ANY</title>
 	<meta charset="utf-8">
