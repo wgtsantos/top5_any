@@ -81,7 +81,7 @@
             <br/>
             <label> Repita a Senha: </label>
             <input type="password" name="rpsenha" id="rpsenha" placeholder="Digite novamente sua Senha" />
-            <br>
+            <br/>
             <button type="submit" id="enviar" name="enviar"> Enviar </button>
 	      </form>	
 	  </fieldset>	 		
