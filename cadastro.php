@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> TOP 5 ANY </title>
+	<title> TOP 5 ANY</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen">
 </head>
@@ -20,7 +20,7 @@
 	 	  <li style="float: right;"> <a href="sobre.html"> Sobre </a> </li>
 	 	</ul>	
 	 </nav>
-	 <aside>
+	 <aside class="cadtop">
  	<div id="cad">
 	  <fieldset>
 	    <legend> Faça o seu Cadastro </legend>
@@ -46,31 +46,31 @@
 	      	<br/>
 	      	<label> Escolha os 5 Melhores: </label>
 	      	<br/> <br/>
-	      	<label> Top 1 </label>
+	      	<label> Top 1: </label>
 	      	<select id="top1" name="top1" required>
 	      		<option value="" selected="selected">--selecione--</option>
 	      		<option value="Teste"> Teste </option>
 	      	</select>
 	      	<br/>
-	      	<label> Top 2 </label>
+	      	<label> Top 2: </label>
 	      	<select id="top1" name="top1" required>
 	      		<option value="" selected="selected">--selecione--</option>
 	      		<option value="Teste"> Teste </option>
 	      	</select>
 	      	<br/>
-	      	<label> Top 3 </label>
+	      	<label> Top 3: </label>
 	      	<select id="top1" name="top1" required>
 	      		<option value="" selected="selected">--selecione--</option>
 	      		<option value="Teste"> Teste </option>
 	      	</select>
 	      	<br/>
-	      	<label> Top 4 </label>
+	      	<label> Top 4: </label>
 	      	<select id="top1" name="top1" required>
 	      		<option value="" selected="selected">--selecione--</option>
 	      		<option value="Teste"> Teste </option>
 	      	</select>
 	      	<br/>
-	      	<label> Top 5 </label>
+	      	<label> Top 5: </label>
 	      	<select id="top1" name="top1" required>
 	      		<option value="" selected="selected">--selecione--</option>
 	      		<option value="Teste"> Teste </option>
@@ -81,7 +81,7 @@
             <br/>
             <label> Repita a Senha: </label>
             <input type="password" name="rpsenha" id="rpsenha" placeholder="Digite novamente sua Senha" />
-            <br/>
+            <br>
             <button type="submit" id="enviar" name="enviar"> Enviar </button>
 	      </form>	
 	  </fieldset>	 		

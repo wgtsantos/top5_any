@@ -9,19 +9,19 @@
 }
 
 body {
-	background-color: #CAFDEE;
+	background-color: #AEF;
 }
 
 #geral, header, nav, aside, footer {
 	border: 1px solid transparent;
-	border-radius: 8px;
-	box-shadow: 4px 3px 5px rgba(9, 9, 9, 0.6);
+	border-radius: 8px; 
+	box-shadow: 4px 5px 6px rgba(9, 9, 9, 0.6);
 }
 
 #geral {
 	width: 1024px;
 	/* height: 800px; Altura Automática */
-	background-color: #CAFDFF;
+	background-color: #FFF;
 	margin: 0 auto;
 	margin-top: 10px;
 }
@@ -29,9 +29,9 @@ body {
 header {
 	width: 994px;
 	height: 200px;
+	background-color: #EEE;
 	margin-left: 15px;
 	margin-top: 10px;
-	background-color: #99DDFF;
 }
 
 header h1 {
@@ -42,9 +42,9 @@ header h1 {
 nav {
 	width: 994px;
 	height: 57px;
+	background-color: #EFE;
 	margin-left: 15px;
 	margin-top: 10px;
-	background-color: #7EF;	
 }
 
 nav ul {
@@ -66,31 +66,119 @@ nav li a {
 	padding: 20px 16px;
 }
 
-nav li a:hover:not(.atv){
+nav li a:hover:not(.atv) {
 	color: #FFF;
-	background-color: #888;
+	background-color: #AAA;
 }
 
 nav li a.atv {
 	color: #FFF;
-	background-color: #888;
+	background-color: #AAA;
 }
-
 
 aside {
 	width: 994px;
 	height: 500px;
+	background-color: #EEF;
+	border-radius: 6px;
 	margin-left: 15px;
+	margin-top: 10px;	
+}
+
+.cadtop {
+	width: 994px;
+	height: 740px;
+	background-color: #EEF;
+	margin-left: 15px;
+	margin-top: 10px;	
+}
+
+#cad {
+	width: 500px;
+	height: 690px;
+	margin-left: 250px;
 	margin-top: 10px;
-	background-color: #ADD8E6;	
+	padding: 10px;
+	border-radius: 6px;
+	background-color: rgba(250, 250, 250, 0.7);
+	box-shadow: 4px 3px 5px rgba(9, 9, 9, 0.5);
+}
+
+#cad fieldset {
+	border: 2px solid #555;
+	border-radius: 5px;
+	margin-top: 5px;
+	padding: 20px 30px;
+	font-weight: bolder;
+}
+
+#cad legend {
+	font-size: 17px;
+	padding: 0 5px 0 5px;
+	color: #060;
+}
+
+#cad input[type=text], input[type=email], input[type=password], select {
+	width: 300px;
+	height: 30px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	color: #000;
+	font-size: 14px;
+	text-indent: 15px;
+	outline: none;
+}
+
+#cad input[type=date] {
+	width: 210px;
+	height: 30px;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	color: #000;
+	font-size: 14px;
+	text-indent: 15px;
+}
+
+#cad ::placeholder {
+	font-weight: 500;
+	color: #080;
+}
+
+#cad button {
+	margin-left: 160px;
+	width: 120px;
+	height: 33px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	background-color: #3A0;
+	outline: none;
+}
+
+#cad button.titulo {
+	margin-top: 20px;
+	margin-left: 190px;
+	width: 120px;
+	height: 33px;
+	border-radius: 10px;
+	font-size: 15px;
+	font-weight: 600;
+	background-color: #3A0;
+	outline: none;
+}
+
+#cad button:hover {
+	background-color: #480;
+	color: #FFF;
 }
 
 footer {
 	width: 994px;
-	height: 60px;
+	height: 50px;
+	background-color: #EEE;
 	margin-left: 15px;
-	margin-top: 10px;
-	background-color: #7EF;
 	margin-top: 10px;
 	margin-bottom: 10px;	
 }
