@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> TOP 5 ANY </title>
+	<title> TOP 5 ANY</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen">
 </head>
@@ -45,6 +45,16 @@
 	      	<input type="text" name="telefone" id="telefone" placeholder="(XX) XXXX-XXXX" maxlength="12" required />
 	      	<br/>
 	      	<label> Escolha os 5 Melhores: </label>
+
+	      	<?php 
+
+	      		require_once 'conexao_bd.class.php';
+
+	      		$conexao = Conexao_bd::conn();
+
+
+	      	?>
+
 	      	<br/> <br/>
 	      	<label> Top 1: </label>
 	      	<select id="top1" name="top1" required>
@@ -77,11 +87,11 @@
 	      	</select>
             <br/>
             <label> Senha: </label>
-            <input type="password" name="senha" id="senha" placeholder="Digite sua Senha" />
+            <input type="password" name="senha" id="senha" maxlength="12" placeholder="Digite sua Senha" />
             <br/>
             <label> Repita a Senha: </label>
             <input type="password" name="rpsenha" id="rpsenha" placeholder="Digite novamente sua Senha" />
-            <br/>
+            <br>
             <button type="submit" id="enviar" name="enviar"> Enviar </button>
 	      </form>	
 	  </fieldset>	 		
