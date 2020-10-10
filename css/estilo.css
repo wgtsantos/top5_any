@@ -105,6 +105,7 @@ aside {
 }
 
 #cad fieldset {
+	position: relative;
 	border: 2px solid #555;
 	border-radius: 5px;
 	margin-top: 5px;
@@ -118,9 +119,16 @@ aside {
 	color: #060;
 }
 
+#cad label {
+  position:absolute;
+  left:24px;
+  margin-top:6px;
+}
+
 #cad input[type=text], input[type=email], input[type=password], select {
 	width: 300px;
 	height: 30px;
+	margin-left: 135px;
 	border: 1px solid #000;
 	border-radius: 5px;
 	margin-bottom: 15px;
@@ -133,6 +141,7 @@ aside {
 #cad input[type=date] {
 	width: 210px;
 	height: 30px;
+	margin-left: 136px;
 	border: 1px solid #000;
 	border-radius: 5px;
 	margin-bottom: 15px;
