@@ -9,7 +9,7 @@ class Conexao_bd {
 
 		// Informações sobre o banco de dados.
 		$db_host = "localhost";
-		$db_nome = "top5_any_t";
+		$db_nome = "top5_any";
 		$db_usuario = "root";
 		$db_senha = "";
 		$db_driver = "mysql";
