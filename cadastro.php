@@ -45,46 +45,43 @@
 	      	<input type="text" name="telefone" id="telefone" placeholder="(XX) XXXX-XXXX" maxlength="12" required />
 	      	<br/>
 	      	<label> Escolha os 5 Melhores: </label>
-
+			<br/> <br/>
 	      	<?php 
 
+	      	for ($i = 1; $i <= 5; $i++) { 
+	
 	      		require_once 'conexao_bd.class.php';
 
 	      		$conexao = Conexao_bd::conn();
 
+	      		$sql = "SELECT * from titulos";
+
+	      		$stmt = $conexao->prepare($sql);
+	      		$stmt->execute();
+
+	      		$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
+
+	      		echo "<label> Top" . $i . ": </label>\n";
+	      		echo "<select id='top" . $i . "' name='top" . $i . "' required>\n";
+	      		echo "<option value='' selected='selected'>--selecione--</option>\n";
+
+	      		foreach ($stmt->fetchALL() as $result => $linha) {
+	      			
+	      			// <option value='10'> The Boys - Ação - Amazon Prime </option>
+
+	      		echo "<option value='" . $linha['id_titulos'] . "'> " . $linha['nome_titulo'] . " - "  . $linha['categoria'] . " - " . $linha['empresa'] . "</option>\n";
+
+	      		}
+
+	      		echo "</select>\n";
+	      		echo "<br/>\n";
+
+	      	}
+
+	      		$conexao = null;
+
 	      	?>
 
-	      	<br/> <br/>
-	      	<label> Top 1: </label>
-	      	<select id="top1" name="top1" required>
-	      		<option value="" selected="selected">--selecione--</option>
-	      		<option value="Teste"> Teste </option>
-	      	</select>
-	      	<br/>
-	      	<label> Top 2: </label>
-	      	<select id="top1" name="top1" required>
-	      		<option value="" selected="selected">--selecione--</option>
-	      		<option value="Teste"> Teste </option>
-	      	</select>
-	      	<br/>
-	      	<label> Top 3: </label>
-	      	<select id="top1" name="top1" required>
-	      		<option value="" selected="selected">--selecione--</option>
-	      		<option value="Teste"> Teste </option>
-	      	</select>
-	      	<br/>
-	      	<label> Top 4: </label>
-	      	<select id="top1" name="top1" required>
-	      		<option value="" selected="selected">--selecione--</option>
-	      		<option value="Teste"> Teste </option>
-	      	</select>
-	      	<br/>
-	      	<label> Top 5: </label>
-	      	<select id="top1" name="top1" required>
-	      		<option value="" selected="selected">--selecione--</option>
-	      		<option value="Teste"> Teste </option>
-	      	</select>
-            <br/>
             <label> Senha: </label>
             <input type="password" name="senha" id="senha" maxlength="12" placeholder="Digite sua Senha" />
             <br/>
