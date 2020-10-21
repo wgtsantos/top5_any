@@ -21,18 +21,21 @@
 
 		$stmt->execute();
 
-		echo "<script type='text/javascript'>";
-		echo "alert('Dados Gravados com Sucesso!!');";
-		echo "location.href='list_title.php';";
-		echo "</script>";
+		echo "Dados Gravados com Sucesso!!";
+
+		echo '<script type="text/javascript">';
+		echo 'alert("Dados Gravados com Sucesso!!");';
+		echo 'location.href="list_title.php";';
+		echo '</script>';
 		
 	} catch (Exception $e) {
 
-		echo "Erro ao inserir os dados! " . $e->getMessage();
-		echo "<script type='text/javascript'>";
-		echo "alert('Erro ao inserir os dados! Titulo já existente!! " . $e->getMessage() . "');";
-		echo "location.href='cad_title.html';";
-		echo "</script>";
+		echo "Error! Falha ao gravar dados! Titulo já Existente!" . $e->getMessage();
+		
+		echo '<script type="text/javascript">';
+		echo 'alert("Error! Falha ao gravar dados! Titulo já Existente! ' . $e->getMessage() . '");';
+		echo 'location.href="cad_title.html";';
+		echo '</script>';
 				
 	}
 
