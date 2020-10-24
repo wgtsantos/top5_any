@@ -4,6 +4,26 @@
 	<title> TOP 5 ANY</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/estilo.css" media="screen">
+	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+	<script type="text/javascript">
+		
+		function validarSenha() {
+			
+			var senha = document.getElementById('senha').value;
+			var rpsenha = document.getElementById('rpsenha').value;
+
+			if (senha !== rpsenha) {
+				alert("Senhas não Conferem!!");
+				document.getElementById('rpsenha').value = "";
+				return false;
+			}
+
+			return true;			
+		}
+
+	</script>
+
 </head>
 <body>
 
@@ -42,7 +62,7 @@
 	      	<input type="date" name="data_nasc" id="data_nasc" placeholder="Data de Nascimento" required />
 	      	<br/>
 	      	<label> Telefone: </label>
-	      	<input type="text" name="telefone" id="telefone" placeholder="(XX) XXXX-XXXX" maxlength="12" required />
+	      	<input type="text" name="telefone" id="telefone" placeholder="(XX) XXXX-XXXX" maxlength="12" data-mask="(00) 0000-0000"  required />
 	      	<br/>
 	      	<label> Escolha os 5 Melhores: </label>
 			<br/> <br/>
@@ -62,7 +82,7 @@
 	      		$result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
 
 	      		echo "<label> Top" . $i . ": </label>\n";
-	      		echo "<select id='top" . $i . "' name='top" . $i . "' required>\n";
+	      		echo "<select id='top" . $i . "' name='top" . $i . "' >\n";
 	      		echo "<option value='' selected='selected'>--selecione--</option>\n";
 
 	      		foreach ($stmt->fetchALL() as $result => $linha) {
@@ -88,7 +108,7 @@
             <label> Repita a Senha: </label>
             <input type="password" name="rpsenha" id="rpsenha" placeholder="Digite novamente sua Senha" />
             <br>
-            <button type="submit" id="enviar" name="enviar"> Enviar </button>
+            <button type="submit" id="enviar" name="enviar" onclick="return validarSenha()"> Enviar </button>
 	      </form>	
 	  </fieldset>	 		
  	</div>
@@ -97,5 +117,7 @@
 
 	</div>
 
+ 	<script type="text/javascript" src="js/jquery.mask.js"></script>
+ 	<script type="text/javascript" src="js/jquery.mask.min.js"></script>
 </body>
 </html>
